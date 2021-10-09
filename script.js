@@ -80,7 +80,7 @@ document.querySelector(".card-submit").addEventListener("click",function(){
         }
          console.log(data.oldUrl) 
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "https://shortify-api.herokuapp.com/generate/shortUrl");
+            xhr.open("POST", "https://git.heroku.com/codechef-shortify.git/generate/shortUrl");
             xhr.setRequestHeader('Content-Type', 'application/json');
             xhr.setRequestHeader("Authorization", "JWT "+userToken);
             xhr.send(JSON.stringify(data));
